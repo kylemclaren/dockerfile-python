@@ -1,0 +1,6 @@
+#!/bin/bash
+# entrypoint.sh.template
+
+echo "Starting Application"
+
+exec {START_COMMAND}

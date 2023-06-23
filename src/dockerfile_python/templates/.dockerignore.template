@@ -1,0 +1,11 @@
+# .dockerignore.template
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+*.test
+*.log
+.dockerignore
+Dockerfile*
+*.md
+.git

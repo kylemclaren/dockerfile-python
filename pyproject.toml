@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "dockerfile_python"
+version = "0.1.0"
+description = "Python repository scanner and Dockerfile generator for Fly.io"
+authors = ["Kyle McLaren <mclaren@fly.io>"]
+readme = "README.md"
+packages = [
+    { include = "dockerfile_python", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+dockerfile_python = "dockerfile_python.main:main"

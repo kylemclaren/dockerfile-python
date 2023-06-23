@@ -1,0 +1,10 @@
+# Dockerfile.template
+FROM {BASE_IMAGE}
+
+WORKDIR /app
+
+COPY . .
+
+RUN {INSTALL_COMMANDS}
+
+CMD [ "{ENTRYPOINT_COMMAND}" ]
